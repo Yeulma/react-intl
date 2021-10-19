@@ -2,7 +2,7 @@
   "_args": [
     [
       "react-intl@2.9.0",
-      "/Users/Mayeul/ice3/programs/mobile"
+      "/Users/Mayeul/react-intl"
     ]
   ],
   "_from": "react-intl@2.9.0",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/react-intl/-/react-intl-2.9.0.tgz",
   "_spec": "2.9.0",
-  "_where": "/Users/Mayeul/ice3/programs/mobile",
+  "_where": "/Users/Mayeul/react-intl",
   "author": {
     "name": "Eric Ferraiuolo",
     "email": "edf@ericf.me"
@@ -156,20 +156,12 @@
     "url": "git+ssh://git@github.com/yahoo/react-intl.git"
   },
   "scripts": {
-    "build": "npm run build:data && npm run build:lib && npm run build:dist",
-    "build:data": "babel-node scripts/build-data",
-    "build:dist": "npm run build:dist:dev && npm run build:dist:prod",
-    "build:dist:dev": "cross-env NODE_ENV=development rollup -c rollup.config.dist.js",
-    "build:dist:prod": "cross-env NODE_ENV=production rollup -c rollup.config.dist.js",
-    "build:lib": "rollup -c rollup.config.lib.js",
-    "clean": "rimraf src/en.js coverage/ dist/ lib/ locale-data/ test/renderer.js",
     "examples:install": "babel-node scripts/examples npm install",
     "examples:link": "npm link && babel-node scripts/examples npm link react-intl",
     "format": "prettier --write --single-quote --trailing-comma=es5 --bracket-spacing false *.js scripts/*.js src/{*.js,**/*.js}",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "npm run clean && npm run build",
-    "preversion": "npm run clean && npm run build && npm run test:all",
+    "prepare": "echo prepare",
     "react:14": "npm run react:clean && npm i react@^0.14 react-dom@^0.14 react-addons-test-utils@^0.14",
     "react:15": "npm run react:clean && npm i react@^15 react-dom@^15",
     "react:clean": "rimraf node_modules/{react,react-dom,react-addons-test-utils}",
