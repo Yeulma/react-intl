@@ -149,7 +149,7 @@
   "name": "react-intl",
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^0.14.9 || ^15.0.0 || ^16.0.0"
+    "react": "^0.14.9 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "repository": {
     "type": "git",
